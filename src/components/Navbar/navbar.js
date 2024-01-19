@@ -20,7 +20,7 @@ const Navbar = () => {
         <Link activeClass='active' to="works" spy={true} smooth={true} offset={-70} duration={500} className="desktopMenuListItems">Portfolio</Link>
       </div>
       <Button className="desktopMenuBtn" onClick={() => {
-        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
+        document.getElementById('contactPage').scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest', offset: { top: -150 } })
       }}>
         <img src={contactImg} alt="reload" className="desktopMenuImg" />Contact me
       </Button>
@@ -48,17 +48,19 @@ const Navbar = () => {
             <Link activeClass='moActive' to="works" spy={true} smooth={true} offset={-70} duration={500} className="moDesktopMenuListItems">Portfolio</Link>
           ) : ("")
         }
-         <Button className="desktopMenuBtn" onClick={() => {
-        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
-      }}>
-        <img src={contactImg} alt="reload" className="desktopMenuImg" />Contact me
-      </Button>
 
+        {
+          show ? <Button className="desktopMenuBtn" onClick={() => {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
+          }}>
+            <img src={contactImg} alt="reload" className="desktopMenuImg" />Contact me
+          </Button> : ("")
+        }
 
 
 
       </div>
-     
+
     </nav>
   )
 }
