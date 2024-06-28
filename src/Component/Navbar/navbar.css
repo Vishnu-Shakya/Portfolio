@@ -1,0 +1,110 @@
+.navbar{
+    background-color: rgb(30, 30, 30);
+    height:5rem;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+
+}
+.logo{
+    object-fit: cover;
+    height: 3rem;
+} 
+.desktopMenuListItems{
+    margin: 1rem;
+    cursor: pointer;
+}
+.desktopMenuListItems:hover{
+    color: yellow;
+    padding-bottom: 0.5rem ;
+    border-bottom: 2px solid  yellow;
+}
+.desktopMenuBtn{
+    background-color: white;
+    color: black;
+    height: 3rem;
+    width: auto;
+    border: None;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5rem;
+    border-radius: 2rem;
+}
+.desktopMenuImg{
+    object-fit: cover;
+    height: 1rem;
+    width:auto ;
+    padding: 0 0.5rem;
+}
+.active{
+    color: yellow;
+    /* text-decoration: underline; */
+}
+
+
+.moMenu{
+    display: none;
+}
+.moMenuLogo{
+    display: none;
+}
+
+@media screen and (max-width:620px) {
+    .moMenu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        background:rgb(40,40,40);
+        right:0px;
+        justify-content: center;
+        align-items: center;
+        width:120px;
+        height: auto;
+        border-radius: 1rem;
+
+
+    }
+    .moMenuLogo{
+        display: block;
+        height: 1.6rem;
+        object-fit: cover;
+        width: 2.24rem;
+    }
+
+    .desktopMenuBtn{
+        display: none;
+    }
+    .desktopMenu{
+        display: none;
+    }
+    .navbar{
+        height: 2.7rem;
+    }
+    .logo{
+        height: 2.6rem;
+    }
+}
+.moDesktopMenuListItems{
+    margin: 5px;
+    width: 4.12rem;
+    padding: 8px auto;
+    cursor: pointer;
+    background:rgb(30, 30, 30);
+    text-align: center;
+    border-radius: 3px;
+}
+.moDesktopMenuListItems:hover{
+    color: yellow;
+    border-bottom: 2px solid  yellow;
+}
