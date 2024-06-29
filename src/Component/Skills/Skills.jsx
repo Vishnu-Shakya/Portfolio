@@ -27,7 +27,9 @@ I specialize in full-stack web development, proficient in MongoDB, Node.js, Expr
                     <img src={webDesign} alt="" className="skillBarImg" />
                     <div className="skillBarText">
                         <h1>  Web Design </h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus doloribus et alias?</p>
+                        <p>I create attractive and easy-to-use web designs. My work focuses on making websites look good and work well on all devices.
+
+</p>
                     </div>
                 </div>
                 <div className="skillBar">
@@ -35,7 +37,7 @@ I specialize in full-stack web development, proficient in MongoDB, Node.js, Expr
                     <div className="skillBarText">
                         <h1>Competitive Programming </h1>
                         <p>
-                            I am a passionate programmer with extensive experience in C++,python and C
+                            I am a passionate programmer with extensive experience in C++, python and C
                         </p>
                     </div>
                 </div>
